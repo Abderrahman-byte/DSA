@@ -7,5 +7,5 @@
 - [x] Dynamic Array
 - [x] Stack
 - [x] Queue
-- [ ] Double Ended Queue
+- [x] Double Ended Queue
 - [ ] Linked List
