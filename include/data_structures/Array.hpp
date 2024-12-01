@@ -24,7 +24,11 @@ template <typename T> class Array {
     void shrink();
 };
 
-extern template class Array<int>;
+extern template class Array<bool>;
+extern template class Array<char>;
+extern template class Array<double>;
 extern template class Array<float>;
+extern template class Array<int>;
 extern template class Array<std::string>;
+extern template class Array<wchar_t>;
 #endif

@@ -2,6 +2,8 @@
 
 #include "data_structures/Array.hpp"
 
+// TODO use calloc & malloc & free
+
 template <typename T> Array<T>::Array() {
     _capacity = 1;
     array = new T[_capacity];
@@ -45,7 +47,7 @@ template <typename T> T Array<T>::pop_back() {
 template <typename T> void Array<T>::grow() {
     _capacity *= 2;
 
-    T *temp = new T[_capacity * 2];
+    T *temp = new T[_capacity];
 
     for (int i = 0; i < _size; i++) {
         temp[i] = array[i];
@@ -69,7 +71,6 @@ template <typename T> void Array<T>::shrink() {
     }
 
     delete[] array;
-
     array = temp;
 }
 
@@ -116,6 +117,10 @@ template <typename T> const T &Array<T>::operator[](int index) const {
 
 template <typename T> int Array<T>::size() { return _size; }
 
-template class Array<int>;
+template class Array<bool>;
+template class Array<char>;
+template class Array<double>;
 template class Array<float>;
+template class Array<int>;
 template class Array<std::string>;
+template class Array<wchar_t>;
