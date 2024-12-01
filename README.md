@@ -3,7 +3,7 @@
 ## Data structure
 
 - [x] Dynamic Array
-- [ ] Stack
+- [x] Stack
 - [ ] Queue
 - [ ] Double Ended Queue
 - [ ] Linked List
